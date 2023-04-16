@@ -1,0 +1,349 @@
+* {
+    /*默认文字颜色*/
+    color: #fff7f3;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+html {
+    zoom: 0.8
+}
+body{
+    widht: 100%;
+    background-color: transparent;
+}
+
+/* snackbar alert */
+
+#vid {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #fff7f3; /* Black background color */
+  color: #fff; /* White text color */
+  font-size: 165%;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#vid.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+} 
+  
+#welcum {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  font-size: 165%;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#welcum.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}  
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  font-size: 165%;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+  
+/* snackbar end */
+.theme
+{
+  border-radius: 50%;
+  border:1px solid white;
+  position: absolute;
+  top: 8%;
+  left: 85.6%;
+}
+/* cfg */
+#config {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  font-size: 165%;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#config.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+  
+#H5AlertView {
+    background-color: black;
+    opacity: 65%;
+    text-align:center;
+    border: 2px green;
+    background: green;
+}
+
+#title-img{
+    position: relative;
+    z-index:1;
+}
+
+#title-text{
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-size: 40px;
+    position: top;
+    color: #494949;
+}
+
+#shom {
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-size: 100%;
+    position: absolute;
+    top: 23%;
+    left: 2.6%;
+    color: #494949;
+}
+  
+#dev {
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-size: 100%;
+    position: top;
+    color: #494949;
+}
+  
+#tgdev {
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-size: 100%;
+    position: left;
+    color: #494949;
+}
+
+.bgdeco{
+  size: 300px;
+  height: 330px;
+  width: 470px;
+  opacity: 10%;
+  z-index: -999;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+  
+#content-view{
+    z-index:0;
+    width: 450px;
+    background: black;
+    opacity: 80%;
+    position: relative;
+    top: 10px;
+    border: 1px solid green;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+button {
+    border-radius: 2%;
+    border:1px solid green;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: gray;
+    opacity: 50%;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    padding: 0 8px;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+button:active {
+    border-radius: 2%;
+    border:1px solid green;
+    transition: 0.5s opacity ease-in-out;
+    background-color: dark;
+    transform: translateY(1px);
+}
+  
+  .bgtext {
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    font-size: 650%;
+    color: white;
+    opacity: 20%;
+
+}
+  
+.body_hide {
+	opacity: 0;
+	transition: 0.5s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+    
+/* 滚动条整体部分 */
+.scrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.scrollbar::-webkit-scrollbar {
+    width: 5px; /* 纵向滚动条宽度 */
+    height: 5px;/* 横向滚动条高度 */
+    background-color: #F5F5F5; /* 滚动条整体背景，一般被覆盖着 */
+}
+/* 滚动条的轨道（里面装有Thumb） */
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* 滚动条轨道阴影 */
+    /*border-radius: 10px; /* 滚动条轨道圆角 */
+    background-color: #F5F5F5; /* 滚动条轨道背景 */
+}
+/* 滚动条里面的滑块 */
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 15px; /* 滚动条滑块圆角 */
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); /* 滚动条滑块阴影 */
+    background-color: #B8B8B8; /* 滚动条滑块颜色 */
+}

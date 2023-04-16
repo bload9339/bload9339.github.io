@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>H5AlertView</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="black-theme.css">
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  document.getElementById("switchMode");
+
+ switchMode.onclick = function () {
+    let theme = document.getElementById("theme");
+   
+   if (theme.getAttribute("href") == "light-mode.css") {
+       theme.href = "dark-mode.css";
+   } else {
+       theme.href = "light-mode.css";
+   }
+}
+ <link rel="stylesheet" href="light-mode.css" id="theme">
+  function welcum() {
+  var x = document.getElementById("welcum");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
+if(typeof $ == 'undefined') alert("网络异常无法访问百度CDN!");
+
+//页面显示完毕事件
+$(document).ready(function(){
+    /*禁止文本选择和拖动*/
+    document.body.onselectstart = document.body.ondrag =function(){
+        return false;
+    }
+    //文本框等输入完毕后页面自动滚动到顶部
+    $("input").blur(function(){
+        window.scroll(0,0);
+    });
+    
+    //激活webkit的button:active
+    document.body.addEventListener('touchstart', function () {});
+    
+    
+    //设置可拖动区域为圆形区域
+    setWindowDrag(50, 00, 70, 70);
+    
+    if(typeof h5gg != 'undefined')
+    {
+        //调整悬浮窗位置和尺寸并全屏居中显示
+        var w=210; var h=300;
+        
+        var layout = function()
+        {
+            //window.orientation是设备握持方向, 不是屏幕显示方向
+            if(window.lastorientation==window.orientation) return;
+            window.lastorientation=window.orientation;
+            
+            //window.screen中的宽高不会随着屏幕旋转更新(只会在初始化的时候固定)
+            if(Math.abs(window.orientation)==90) {
+                //横屏
+                var x=(window.screen.height - w)/2;
+                var y=(window.screen.width - h)/2;
+                setWindowRect(x, y, w, h);
+            } else {
+                //竖屏
+                var x=(window.screen.width - w)/2;
+                var y=(window.screen.height - h)/2;
+                setWindowRect(x, y, w, h);
+            }
+        }
+        
+        layout(); //设置旋转屏幕时自动调整布局和画布
+        window.addEventListener("orientationchange", layout, false);
+    }
+});
+  </script>
+  <script>
+  
+function custom(input) {
+			var oldskinid = prompt("Enter oldskin ID:");
+			var newskinid = prompt("Enter newskin ID:");
+			h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+			h5gg.editAll(newskinid, 'I64');
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  h5gg.clearResults();
+		}
+  
+function cfg() {
+  h5gg.pickScriptFile(onClickLoadScript)
+  /* Сообщение о загрузке кфг */
+  var x = document.getElementById("config");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+  
+function bay1(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+   h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+   h5gg.editAll(71005,'I64');
+    var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+   h5gg.clearResults();   
+}
+    
+function bay2(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(200012,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+ 
+function bay3(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(71001,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+
+function bay4(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(71002,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  
+function bay5(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(71003,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+
+function bay6(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(157100,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+ 
+function bay7(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(97100,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  
+  function k1(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(72003,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function k2(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(72002,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function k3(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(72004,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function k4(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(72006,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function k5(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(157200,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function k6(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(200011,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function k7(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(97203,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function k8(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(97200,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function k9(input) {
+    var oldskinid = prompt("Введи ID старого скина:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll(97201,'I64');
+        var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();   
+}
+  function j1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('73002','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function j2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('73003','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function j3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('73004','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function j4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('73006','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function j5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('97300','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function j6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('157300','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+   function b1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('47503','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function b2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('47502','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function b3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('57501','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function b4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('47504','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function b5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('47505','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function b6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('97500','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function b7(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('157500','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function f1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('67701','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    
+    function f2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('67702','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function f3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('67703','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function f4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('67704','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function f5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('67705','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    
+    function f6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('97700','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function f7(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('157700','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+   function kun1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('77813','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kun2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('77814','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kun3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('77815','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kun4() {
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('77816','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kun5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('77817','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kun6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('97800','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kun7(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('97801','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kun8(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('157800','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+   function s1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('87919','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function s2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('87920','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function s3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('87921','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function s4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('87922','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function s5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('97900','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function s6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('157900','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function t1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('138000','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function t2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('138001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function t3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('138002','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function t4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('138003','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function t5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('138004','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function t6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('128005','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function t7(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('148000','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function t8(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('158000','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function d1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('170021','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function d2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('170022','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function d3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('170023','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function d4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('170024','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function d5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180000','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function d6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180028','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function kk1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180022','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kk2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180023','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kk3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180024','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function kk4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180025','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function kk5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180026','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function kk6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180027','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function g1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3006','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3007','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3008','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3009','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3000','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g7(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3002','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g8(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3003','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g9(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3004','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+    
+    function g10(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3005','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function g11(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3011','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function g12(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3012','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function g13(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3013','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function g14(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3014','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function g15(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3015','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function g16(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('3016','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+  
+
+  function usp1(){ // genezis
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('12001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function usp2(){ // twoyears
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('12002','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function usp3(){ // chameleon 
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('121200','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function usp4(){ // geometric
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('81200','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ptr1(){ // blizzard 
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('91300','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ptr2(){ // radiaton
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('71306','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ptr3(){ // tagking
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('170018','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ptr4(){ // forest spirit
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('13003','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function glx1(){ // worm
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('11008','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function glx2(){ // relic
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('41101','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function glx3(){ // nest
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('11002','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function glx4(){ // frozen 
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('61101','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+// necromancer, scylla, tagking, dragon, trasure hunter, digital burst, steelgrip, fabricstorm
+  function ak1(){ // 
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('44005','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ak2(){ // 
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ak3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('170001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ak4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('84402','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ak5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('44002','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ak6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('200009','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ak7(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('210004','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function ak8(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('54401','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function akr1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('84400','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+ // ak12
+
+  function akr2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('104400','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function akr3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('45001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function akr4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('190001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+// m4
+  function mka1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('46002','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mka2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('44601','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mka3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('44603','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+  
+  function mka4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('54601','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mka5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('200001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+//mkaa1
+  function mkaa1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180018','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mkaa2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('134300','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mkaa3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('144300','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mkaa4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('124300','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mkaa5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('154300','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+  //m16
+
+  function mka16(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('134700','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mka17(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('94700','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mka18(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('47002', 'I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mka19(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180019','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function mka20(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('200007','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+// awem
+  function awm1(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('180002','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm2(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('210003','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm3(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('65101','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm4(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('85127','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm5(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('51001','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm6(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('51006','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm7(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('51003','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm8(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('125100','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm9(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('85104','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm10(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('51007','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm11(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('51008','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+
+  function awm12(){
+    var oldskinid = prompt("Enter oldskin ID:");
+    h5gg.searchNumber(oldskinid, 'I64', '0x00000000', '0x1600000000');
+    h5gg.editAll('165100','I64');
+            var x = document.getElementById("snackbar");   x.className = "show";   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    h5gg.clearResults();
+    }
+                  
+</script>
+</head>
+<body onload="welcum();">
+<div id="H5AlertView">
+</div>
+<script>
+  
+function udid()
+{
+  const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
+    .then(FingerprintJS => FingerprintJS.load())
+
+  // Get the visitor identifier when you need it.
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      // This is the visitor identifier:
+      const visitorId = result.visitorId
+      var x = document.getElementById("vid");   x.className = "show";  
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    })
+}
+  
+// Функции
+</script>
+<div id="content-view">
+  <img class="bgdeco" src="https://media.discordapp.net/attachments/936070698844192802/1068538106615189545/IMG_3047.gif">
+  <div id="shom">ZXCRAR FREE</div>
+  <div id="dev">ipaDEV</div>
+  <div id="tgdev"> t.me/zxcrarsoft </div>
+  <input onclick="udid()" type="image" src="https://media.discordapp.net/attachments/936070698844192802/1068523842705817650/IMG_3043.png" class="theme" width="50px">
+<div id="snackbar">Success!</div>
+<div id="config">Config Loaded!</div>
+<div id="welcum">Cheat by @zxcrarsoft</div>
+<div id="vid">?</div>
+<div id="title-text">ZXCRAR FREE</div>
+<br>
+<div class="scrollbar" style="max-height:220px">
+  <p class="bgtext">
+      
+  </p>
+  <button onclick="cfg()"> Load Config </button>
+    <button onclick="custom()"> Custom Skin </button>
+  <br><br>
+    <button onclick="g1()">Gloves Burning Fists</button>
+    <button onclick="g2()">Gloves Punk</button>
+    <p>
+    <button onclick="g3()">Gloves Champion</button>
+    <button onclick="g4()">Gloves Steam Rider</button>
+    </p><p>
+    <button onclick="g5()">Gloves Phoenix Risen</button>
+    <button onclick="g6()">Gloves Autumn</button>
+    </p><p>
+    <button onclick="g7()">Gloves Geometric</button>
+    <button onclick="g8()">Gloves Retro Wave</button>
+    </p><p>
+    <button onclick="g9()">Gloves Living Flame</button>
+    <button onclick="g10()">Gloves Neuro</button>
+    </p><p>
+    <button onclick="g11()">Gloves Acid</button>
+    <button onclick="g12()">Gloves Camo</button>
+    </p><p>
+    <button onclick="g13()">Gloves Fossil</button>
+    <button onclick="g14()">Gloves HandCraft</button>
+    </p><p>
+    <button onclick="g15()">Gloves Raider</button>
+    <button onclick="g16()">Gloves Thug</button>
+<p>Bayonet M9</p>
+    <button onclick="bay1(this)">M9 Dragon Glasz</button>
+    <button onclick="bay2(this)">M9 Digital Burst</button>
+    <p>
+    <button onclick="bay3(this)">M9 BlueBlood</button>
+    <button onclick="bay4(this)">M9 Ancient</button>
+          <button onclick="bay5(this)">M9 Scartch</button>
+          <button onclick="bay6(this)">M9 Kumo</button>
+          <button onclick="bay7(this)">M9 Frozen</button>
+      
+      <p>Kerambit</p>
+    <button onclick="k1(this)">Karambit Gold</button>
+    <button onclick="k2(this)">Karambit Claw</button>
+    <p>
+    <button onclick="k3(this)">Karambit Dragon</button>
+    <button onclick="k4(this)">Karambit Scartch</button>
+    <button onclick="k5(this)"> Karambit Year Tiger</button>
+    <button onclick="k6(this)"> Karambit Purple Camo</button>
+    <button onclick="k7(this)"> Karambit Snow Camo</button>
+    <button onclick="k8(this)"> Karambit Cold Flame</button>
+    <button onclick="k9(this)"> Karambit Frozen</button>
+ </p><p>jKommando</p>
+    <button onclick="j1()">jKommando Ancient</button>
+    <button onclick="j2()">jKommando Reaper</button>
+    <p>
+    <button onclick="j3()">jKommando Floral</button>
+    <button onclick="j4()">jKommando Luxury</button>
+    </p><p>
+    <button onclick="j5()">jKommando Frozen</button>
+    <button onclick="j6()">jKommando Augustite</button>
+    </p><p>Butterfly</p>
+    <button onclick="b1()">Butterfly DragonGlass</button>
+    <button onclick="b2()">Butterfly Legacy</button>
+    <button onclick="b3()">Butterfly FireStorm</button>
+    <p>
+    <button onclick="b4()">Butterfly BlackWidow</button>
+    <button onclick="b5()">Butterfly Starfall</button>
+    </p><p>
+    <button onclick="b6()">Butterfly ColdFlame</button>
+    <button onclick="b7()">Butterfly Kumo</button>
+    </p><p>Flip Knife</p>
+    <button onclick="f1()">Flip DragonGlass</button>
+    <button onclick="f2()">Flip Arctic</button>
+    <button onclick="f3()">Flip StoneCold</button>
+    <p>
+    <button onclick="f4()">Flip Vortex</button>
+    <button onclick="f5()">Flip Frozen</button>
+    </p><p>
+    <button onclick="f6()">Flip SnowCamo</button>
+    <button onclick="f7()">Flip HolidayFrost</button>
+    </p><p>Kunai</p>
+    <button onclick="kun1()">Kunai Bone</button>
+    <button onclick="kun2()">Kunai Luxury</button>
+    <p>
+    <button onclick="kun3()">Kunai Poison</button>
+    <button onclick="kun4()">Kunai Radiation</button>
+    </p><p>
+    <button onclick="kun5()">Kunai Reaper</button>
+    <button onclick="kun6()">Kunai ColdFlame</button>
+    </p><p>
+    <button onclick="kun7()">Kunai SnowCamo</button>
+    <button onclick="kun8()">Kunai Augustite</button>
+    </p><p>Scorpion</p>
+    <button onclick="s1()">Scorpion Veil</button>
+    <button onclick="s2()">Scorpion Sea Eye</button>
+    <p>
+    <button onclick="s3()">Scorpion Scratch</button>
+    <button onclick="s4()">Scorpion Starfall</button>
+    </p><p>
+    <button onclick="s5()">Scorpion ColdFlame</button>
+    <button onclick="s6()">Scorpion HolidayFrost</button>
+    </p><p>Tanto</p>
+    <button onclick="t1()">Tanto Dojo</button>
+    <button onclick="t2()">Tanto Yakuza</button>
+    <p>
+    <button onclick="t3()">Tanto Malachite</button>
+    <button onclick="t4()">Tanto Pearl Abyss</button>
+    </p><p>
+    <button onclick="t5()">Tanto Transistor</button>
+    <button onclick="t6()">Tanto Flow</button>
+    </p><p>
+    <button onclick="t7()">Tanto Restless</button>
+    <button onclick="t8()">Tanto Year Of Tiger</button>
+      </p><p>Dual Daggers</p>
+    <button onclick="d1()">Daggers Acid</button>
+    <button onclick="d2()">Daggers Demonic</button>
+    <p>
+    <button onclick="d3()">Daggers Grunge</button>
+    <button onclick="d4()">Daggers Molten</button>
+    </p><p>
+    <button onclick="d5()">Daggers Harmony</button>
+    <button onclick="d6()">Daggers Jaws</button>
+    </p><p>Kukri</p>
+    <button onclick="kk1()">Kukri Ares</button>
+    <button onclick="kk2()">Kukri Prophet</button>
+    <p>
+    <button onclick="kk3()">Kukri Gold Trim</button>
+    <button onclick="kk4()">Kukri Antique Silver</button>
+    </p><p>
+    <button onclick="kk5()">Kukri Constellations</button>
+    <button onclick="kk6()">Kukri Divine Power</button>             
+        </p><p>usp</p>
+    <button onclick="usp1()">USP Genezis</button>
+    <button onclick="usp2()">USP 2 Years </button>
+    <p>
+    <button onclick="usp3()">USP Chameleon</button>
+    <button onclick="usp4()">USP Geometric</button>
+    </p><p> P350 </p>
+    <button onclick="ptr1()">P350 Blizzard</button>
+    <button onclick="ptr2()">P350 Radiation</button>
+    <button onclick="ptr3()">P350 Tag King</button>
+    <button onclick="ptr4()">P350 Forest Spirit</button>
+    <p>
+    <button onclick="glx1()">Glock Worm</button>
+    <button onclick="glx2()">Glock Relic</button>
+    </p><p>
+    <button onclick="glx3()">Glock Nest</button>
+    <button onclick="glx4()">Glock Frozen</button> 
+      </p><p>AKR</p>
+    <button onclick="ak1()">Akr Necromancer</button>
+    <button onclick="ak2()">Akr Scylla</button>
+    <p>
+    <button onclick="ak3()">Akr TagKing</button>
+    <button onclick="ak4()">Akr Dragon</button>
+    </p><p>
+    <button onclick="ak5()">Akr Treasure Hunter</button>
+    <button onclick="ak6()">Akr Digital Burst</button>
+    <button onclick="ak7()">Akr SteelGrip</button>
+    <button onclick="ak8()">Akr FabricShtorm</button>
+        </p><p>akr12</p>
+    <button onclick="akr1()">Akr12 Geometric</button>
+    <button onclick="akr2()">Akr12 4 Years</button>
+    </p><p>
+    <button onclick="akr3()">Akr12 Railgun</button>
+    <button onclick="akr4()">Akr12 Riot</button>   
+      </p><p>M4</p>
+    <button onclick="mka1()">M4 Necromancer</button>
+    <button onclick="mka2()">M4 Lizard</button>
+    <p>
+    <button onclick="mka3()">M4 Samurai</button>
+    <button onclick="mka4()">M4 PixelShtorm</button>
+    </p><p>
+    <button onclick="mka5()">M4 Sunset</button>
+  </p><p>m4aodin</p>
+    <button onclick="mkaa1()">M4a1 Memaid</button>
+    <button onclick="mkaa2()">M4a1 King</button>
+    <button onclick="mkaa3()">M4a1 Immortal</button>
+    <p>
+    <button onclick="mkaa4()">M4a1 Bubblegum</button>
+    <button onclick="mkaa5()">M4a1 Year Tiger</button>
+    </p><p> m16 </p>
+    <button onclick="mka16()">M16 Triumphant</button>
+    <button onclick="mka17()">M16 IronWill</button>
+    <button onclick="mka18()">M16 Winged</button>
+    <button onclick="mka19()">M16 Muraena</button>
+    <button onclick="mka20()">M16 Retro</button>
+      </p><p>Awm</p>
+    <button onclick="awm1()">AWM Poseidon</button>
+    <button onclick="awm2()">AWM ColdBlooded</button>
+    <p>
+    <button onclick="awm3()">AWM Winter Sport</button>
+    <button onclick="awm4()">AWM Dragon</button>
+    </p><p>
+    <button onclick="awm5()">AWM Sport</button>
+  </p><p>m4aodin</p>
+    <button onclick="awm6()">AWM SportV2</button>
+    <button onclick="awm7()">AWM Gear</button>
+    <button onclick="awm8()">AWM Boom</button>
+    <p>
+    <button onclick="awm9()">AWM Treasure Hunter</button>
+    <button onclick="awm10()">AWM Genezis</button>
+    <button onclick="awm11()">AWM Two Years</button>
+    <button onclick="awm12()">AWM Sticker</button>
+      
+      
+</div>
+</div>
+</div>
+</div>
+  
+<script>
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);          
+</script> 
+  
+</body>
+</html>
